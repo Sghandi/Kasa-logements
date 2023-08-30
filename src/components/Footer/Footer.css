@@ -1,0 +1,9 @@
+.black-footer {
+    background-color: black;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.black-footer p {
+    color:white;
+}

@@ -1,0 +1,49 @@
+/* Card.css */
+
+.card {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    height: 324px;
+  }
+  
+  .card-title {
+    margin-top: 5px; /* Ajustez l'espacement pour les cartes plus petites */
+    font-size: 1rem; /* Utilisez une police plus petite */
+    position: absolute; /* Position absolue */
+    top: 86%; /* À mi-hauteur de la carte */
+  left: 36%; /* Au centre de la carte */
+  transform: translate(-50%, -50%); /* Déplace le titre pour qu'il soit centré */
+  padding: 5px 10px; /* Espacement autour du titre */
+  border-radius: 4px; /* Coins arrondis pour le fond du titre */
+  color:white;
+  }
+  
+  .card-description {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .home-page {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 32px;
+    margin-top: 40px;
+  }
+
+  /* .overlay {
+    height: 324px;
+    width: 100%;
+    position: absolute;
+  } */

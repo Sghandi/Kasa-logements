@@ -5,6 +5,8 @@ import About from "./components/About/About"
 import Location from "./components/Location/Location"
 import NotFound from "./components/NotFound/NotFound"
 import Header from './components/Header/Header'
+import Footer from "./components/Footer/Footer"
+
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
         <Route path="/Location/:id" element={<Location />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <hiiiiii/>
+      <Footer/>
     </div>
   );
 }

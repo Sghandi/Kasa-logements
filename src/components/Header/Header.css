@@ -1,0 +1,34 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.logo-container img {
+    max-width: 150px;
+}
+
+.links-container {
+    display: flex;
+    gap:25px;
+    
+}
+
+.links-container a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .links-container a:focus {
+    text-decoration: underline;
+  }
