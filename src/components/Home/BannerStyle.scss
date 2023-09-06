@@ -1,0 +1,23 @@
+.Banner-home {
+    position: relative;
+    height: 200px;
+    background-image:
+    linear-gradient(to bottom, #FFFFFF00, #00000080),
+    url('./fond.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 65px;
+    margin-right: 65px;
+
+    h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        line-height: 68.45px;
+    }
+}

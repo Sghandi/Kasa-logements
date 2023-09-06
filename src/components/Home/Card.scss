@@ -1,0 +1,52 @@
+/* Card.css */
+
+.card {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  /* .card {
+    background: linear-gradient(to bottom, #FFFFFF00, #00000080);
+  } */
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    height: 324px;
+    /* background: linear-gradient(to bottom, #FFFFFF00, #00000080); */
+    }
+  .card-image img {
+    background: linear-gradient(to bottom, #ff6060, #61dafb);
+  }
+  .card-title {
+    margin-top: 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: 86%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  border-radius: 4px;
+  color:white;
+  }
+  
+  .card-description {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .home-page {
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 32px;
+    margin-top: 40px;
+    margin-left: 65px;
+    margin-right: 65px;
+  }

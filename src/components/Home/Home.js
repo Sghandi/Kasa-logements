@@ -1,8 +1,9 @@
 import React from 'react';
-import './home.css'
-import './BannerStyle.css'
+import './home.scss'
+import './BannerStyle.scss'
 import Banner from "./Banner";
 import Cards from "./Cards"
+
 
 
 

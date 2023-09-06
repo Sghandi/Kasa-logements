@@ -1,9 +1,13 @@
+$orange: #FF6060;
+
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
+    padding-left: 65px;
+    padding-right: 65px;
     background-color: white;
 }
 
@@ -20,8 +24,8 @@
 .links-container a {
     margin-left: 20px;
     text-decoration: none;
-    color: #FF6060;
-    font-size: 24px;
+    color: $orange;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 

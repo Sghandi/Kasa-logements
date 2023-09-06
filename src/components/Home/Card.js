@@ -1,14 +1,13 @@
 import React from 'react';
-import './Card.css';
+import './Card.scss';
 
-function Card({ title, imageSrc, description }) {
+function Card({ title, imageSrc }) {
   return (
     <div className="card">
-      <img src={imageSrc} alt={title} className="card-image" />
-      {/* <div className='overlay'> */}
+      <a href="/Location/:id">
+      <img src={imageSrc} alt={title} className="card-image"/>
       <h2 className="card-title">{title}</h2>
-      {/* </div> */}
-      {/* <p className="card-description">{description}</p> */}
+      </a>
     </div>
   );
 }
