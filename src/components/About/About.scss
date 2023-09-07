@@ -1,3 +1,5 @@
+$orange:#FF6060;
+
 .Banner-about {
     position: relative;
     height: 225px;
@@ -18,7 +20,7 @@
 
 .collapse-button {
     color: white;
-    background-color: #FF6060;
+    background-color: $orange;
     width: 80%;
     border: none;
     border-radius: 10px;
@@ -29,17 +31,17 @@
     margin-top: 25px;
 }
 
-.toggle p {
-    color:#FF6060;
-    margin: 0px;
-    padding:21px;
-    font-size: 20px;
-}
-
 .toggle {
     width: 80%;
     border-radius: 10px;
     background-color:#F6F6F6;
     margin-left:153px;
     text-align: left;
+
+    p {
+        color:$orange;
+        margin: 0px;
+        padding:21px;
+        font-size: 20px;
+    }
 }

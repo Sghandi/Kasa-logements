@@ -1,13 +1,16 @@
-.error-message h1 {
-    font-size:288px;
-    margin:0px;
-}
-.error-message a {
-    margin-top: 55px;
-    text-decoration: underline;
-    color: #FF6060;
-}
+$orange: #FF6060;
 
 .error-message {
-    color: #FF6060;
+    color: $orange;
+
+    h1 {
+        font-size: 288px;
+        margin: 0px;
+    }
+
+    a {
+        margin-top: 55px;
+        text-decoration: underline;
+        color: $orange;
+    }
 }

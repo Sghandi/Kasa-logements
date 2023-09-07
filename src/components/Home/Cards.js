@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card'; 
+// import { Link } from 'react-router-dom'; 
 import propertiesData from './location.json';
 
 function HomePage() {
@@ -10,11 +11,14 @@ function HomePage() {
           key={property.id}
           title={property.title}
           imageSrc={property.cover}
-          description={property.description}
+          id={property.id} 
         />
       ))}
     </div>
   );
 }
 
+
 export default HomePage;
+
+

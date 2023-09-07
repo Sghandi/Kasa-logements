@@ -17,22 +17,21 @@ $orange: #FF6060;
 
 .links-container {
     display: flex;
-    gap:25px;
-    
-}
+    gap: 25px;
 
-.links-container a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: $orange;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
+    a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: $orange;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.links-container a:hover {
-    text-decoration: underline;
-  }
-  
-  .links-container a:focus {
-    text-decoration: underline;
-  }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:focus {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,18 @@
+$orange: #FF6060;
+
+.location-info {
+    color:$orange;
+    font-family: montserrat;
+    padding-left: 65px;
+    
+
+    h1{
+        font-size: 36px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font-size: 18px;
+    }
+}

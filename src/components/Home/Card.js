@@ -1,13 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Card.scss';
 
-function Card({ title, imageSrc }) {
+function Card({ title, imageSrc, id }) {
   return (
     <div className="card">
-      <a href="/Location/:id">
+      <Link to={`/Location/${id}`}>
+        <div className="overlay">
       <img src={imageSrc} alt={title} className="card-image"/>
+      </div>
       <h2 className="card-title">{title}</h2>
-      </a>
+      
+      </Link>
     </div>
   );
 }
