@@ -29,12 +29,17 @@ $orange:#FF6060;
     font-size: 24px;
     text-align: left;
     margin-top: 25px;
+
+    svg {
+        margin-left: 1048px;
+        cursor: pointer;
+      }
 }
 
 .toggle {
     width: 80%;
     border-radius: 10px;
-    background-color:#F6F6F6;
+    background-color:#F6F6F6; 
     margin-left:153px;
     text-align: left;
 
@@ -45,3 +50,11 @@ $orange:#FF6060;
         font-size: 20px;
     }
 }
+
+.rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+ 
+  
