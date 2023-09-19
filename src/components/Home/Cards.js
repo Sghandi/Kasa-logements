@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from './Card'; 
-// import { Link } from 'react-router-dom'; 
-import propertiesData from './location.json';
+import propertiesData from '../../Data/location.json';
 
 function HomePage() {
   return (

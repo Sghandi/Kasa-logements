@@ -45,7 +45,7 @@ $orange:#FF6060;
     width: 80%;
     border-radius: 10px;
     background-color: #F6F6F6;
-    margin-left: 153px;
+    margin-left: 10%;
     text-align: left;
     max-height: 0;
     overflow: hidden;
@@ -79,6 +79,10 @@ $orange:#FF6060;
     border-radius: 12px;
     margin-bottom: 20px;
 
+    }
+
+    .collapse-button {
+        width: 90%;
     }
 }
 

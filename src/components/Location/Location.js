@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Location.scss'
 import { useParams } from 'react-router-dom';
-import locationData from './location.json';
+import locationData from '../../Data/location.json';
 import Collapse from './Collapse';
 import { useNavigate } from "react-router-dom";
+import RatingStars from './Stars';
 
 function Location() {
   const { id } = useParams(); 
@@ -74,10 +75,15 @@ function Location() {
           </div>
         )}
       </div>
-      <div className="host-container">
-        <h1>{card.title}</h1>
-        <div className='host-div'><p>{card.host.name}</p><img src={card.host.picture}/>  </div>
+    
+<div className="host-container">
+      <h1>{card.title}</h1>
+      <div className='host-div'>
+        <p>{card.host.name}</p>
+        <img src={card.host.picture} alt={`Image de ${card.host.name}`} />
+        <RatingStars rating={card.rating} />
       </div>
+    </div>
       <p>{card.location}</p>
       <div className='tags-container'>
         {card.tags.map((tag, index) => (
@@ -85,16 +91,20 @@ function Location() {
         ))}
       </div>
       <div className="collapsible-container">
-        <Collapse label="Description">
+        <div className='test'>
+        <Collapse label="Description" >
           {card.description}
         </Collapse>
-        <Collapse label="Equipements">
+        </div>
+        <div className='test2'>
+        <Collapse label="Equipements" >
           <ul>
             {card.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>
             ))}
           </ul>
         </Collapse>
+        </div>
       </div>
     </div>
   );

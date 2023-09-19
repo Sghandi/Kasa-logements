@@ -36,9 +36,9 @@ $orange: #FF6060;
 }
 
 .collapse-button2{
-    width: 55%;
-    width: 673px;
-    padding: 10px;
+    // width: 55%;
+    width: 100%;
+    // padding: 10px;
     background-color: $orange;
     color: white;
     border: none;
@@ -102,13 +102,13 @@ $orange: #FF6060;
     .host-container {
     display: flex;
     flex-direction: row;
-    // justify-content: flex-end;
-    gap:528px;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    // gap:528px;
+    // flex-wrap: nowrap;
         
         img {
             border-radius: 57px;
-            width: 46%;
+            width: 43%;
     }
     }
 
@@ -139,7 +139,7 @@ $orange: #FF6060;
 .image-indicator {
     position:absolute;
     top: 550px;
-    right: 747px;
+    right: 50%;
     color: white;
 }
 
@@ -151,11 +151,29 @@ $orange: #FF6060;
   .host-div {
     margin-top: 11px;
     display: flex;
+    justify-content:flex-end;
 
     p {
         max-width: 95px;
         margin-top: 14px;
     }
+  }
+
+  .rating-stars {
+    position: absolute;
+    top: 717px;
+    // left: 1209px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .test {
+    width: 100%;
+  }
+
+  .test2 {
+    width: 100%;
   }
 
   @media screen and (max-width: 600px) {
@@ -207,20 +225,19 @@ p {
 
 .host-container img {
 
-    width: 14%;
+    width: 48px;
     position: absolute;
-    top: 91px;
+    top: 582px;
     right: 0;
-    max-width: 100%;
+    margin-right: 25px;
 }
 
 .host-div p {
-    max-width: 100%;
-    // margin-top: 0px;
-    max-width: 100%;
+    // max-width: 100%;
     position: absolute;
-    top: 125px;
-    right: 103px;
+    top: 574px;
+    right: 12%;
+    font-size:15px;
 }
 
 .collapse-button2{
@@ -252,10 +269,27 @@ p {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.image-indicator {
+    display: none;
+}
+.rating-stars {
+    position: absolute;
+    top: 592px;
+    padding-left: 25px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
   }
+
 
   @media screen and (min-width: 600px) and (max-width: 1024px) {
 
+    .image-indicator {
+        display: none;
+    }
     .tags-container {
         padding-bottom: 50px;
     }
@@ -298,19 +332,20 @@ p {
     }
     
     .host-container img {
-        width: 10%;
+        width: 64px;
         position: absolute;
-        top: 685px;
-        right: 23px;
+        top: 704px;
+        // right: 23px;
         max-width: 100%;
     }
 
     .host-div p {
-        max-width: 100%;
-        max-width: 100%;
+        // max-width: 100%;
+        // max-width: 16%;
         position: absolute;
-        top: 695px;
-        right: 107px;
+        top: 699px;
+        right: 76px;
+        font-size: 15px;
     }
     
     .collapse-button2{
@@ -335,11 +370,21 @@ p {
         background-color: #F6F6F6;
         margin-left: 0px;
         padding-left: 0px;
-        font-size: 13px;
+        font-size: 18px;
     }
     
     .location-info {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .rating-stars {
+        position: absolute;
+        top: 728px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding-left: 25px;
     }
   }
