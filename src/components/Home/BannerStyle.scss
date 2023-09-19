@@ -19,5 +19,42 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 48px;
         line-height: 68.45px;
+        font-weight: 500;
+    }
+}
+
+// RESPONSIVE 
+
+@media screen and (max-width: 600px) {
+
+.Banner-home {
+    height: 125px;
+    border-radius: 12px;
+    justify-content: flex-start;
+    text-align: initial;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    h1 {
+        padding-left: 20px;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        width: 218px;
+    }
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .Banner-home {
+        font-size: 33px;
+        margin-left: 25px;
+        margin-right: 25px;
+h1 {
+    font-size: 40px;
+
+}
     }
 }

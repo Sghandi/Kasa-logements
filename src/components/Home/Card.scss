@@ -19,13 +19,12 @@
   margin-top: 5px;
   font-size: 18px;
   position: absolute;
-  top: 86%;
-  left: 36%;
-  transform: translate(-50%, -50%);
-  padding: 5px 10px;
-  border-radius: 4px;
+  top: 80%;
+  left: 2%;
   color: white;
   font-family: Montserrat;
+  // max-width: 60%;
+  text-align: left;
 }
 
 .card-description {
@@ -41,4 +40,69 @@
   margin-top: 40px;
   margin-left: 65px;
   margin-right: 65px;
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 600px) {
+
+  .home-page {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px;
+    margin-top: 30px;
+    // margin-left: 14px;
+    // margin-right: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .card-image {
+    // max-width: 445px;
+    // width: 435px;
+    width: 100%;
+    border-radius: 12px;
+    height: 255px;
+    max-width: 100%;
+  }
+
+  .card-title {
+    top: 77%;
+    left: 5%;
+    font-weight: 500;
+    line-height: 25.67px;
+    max-width: 300px;
+    width: 280px;
+    font-size: 14px;
+
+  }
+
+  .card {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .home-page { 
+    background-color: white;
+    padding: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.card-image {
+  height: 247px;
+}
+
+.card-title {
+  max-width: 96%;
+  font-size: 13px;
+  top: 76%;
+}
 }

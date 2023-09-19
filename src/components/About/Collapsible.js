@@ -7,7 +7,7 @@ const Collapsible = (props) => {
   const toggle = () => {
     setOpen(!open);
   };
-
+  const toggleClass = open ? 'toggle open' : 'toggle';
 return (
   <div>
     <button className="collapse-button" onClick={toggle}>
@@ -17,11 +17,9 @@ return (
 </svg>
 
     </button>
-    {open && (
-      <div className="toggle">
+      <div className={toggleClass}>
         {props.children}
       </div>
-    )}
   </div>
 );
 };

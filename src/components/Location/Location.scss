@@ -47,10 +47,12 @@ $orange: #FF6060;
     font-size: 24px;
     text-align: left;
     margin-top: 25px;
+    display:flex;
+    justify-content: space-between;
 
     svg {
-        margin-left: 459px;
         cursor: pointer;
+        margin-top: 5px; 
       }
 }
 
@@ -60,18 +62,24 @@ $orange: #FF6060;
     background-color: #F6F6F6;
     margin-left: 0px;
     text-align: left;
-    color: #FF6060;
     margin: 0px;
-    padding: 21px;
+    padding-left: 40px;
     font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 
     p {
         color:$orange;
         margin: 0px;
         padding:21px;
         font-size: 20px;
+        padding-top: 20px ;
     }
 }
+.open {
+    max-height: 1000px;
+  }
 
 
 .tags-container {
@@ -113,7 +121,7 @@ $orange: #FF6060;
 
 .arrow-button-left {
     position: absolute;
-    top: 333px;
+    top: 300px;
     border: none;
     background: transparent;
     cursor: pointer;
@@ -121,7 +129,7 @@ $orange: #FF6060;
 
 .arrow-button-right {
     position: absolute;
-    top: 333px;
+    top: 300px;
     right: 65px;
     border: none;
     background: transparent;
@@ -147,5 +155,191 @@ $orange: #FF6060;
     p {
         max-width: 95px;
         margin-top: 14px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .tags-container {
+        padding-bottom: 50px;
+    }
+
+   .location-info {
+    padding-top:0px;
+   } 
+
+   .arrow-button-left {
+    top: 234px;
+
+    svg {
+        width: 20px;
+    }
+
+   }
+   .arrow-button-right {
+    top: 236px;
+    right: 22px;
+
+    svg {
+        width: 20px;
+    }
+   }
+.image-container img {
+   height:  347px;
+   ;
+}
+
+.location-info {
+
+h1 {
+
+        font-size: 18px;
+        text-align: left;
+        white-space:nowrap;
+        font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+}
+
+}
+
+.host-container img {
+
+    width: 14%;
+    position: absolute;
+    top: 91px;
+    right: 0;
+    max-width: 100%;
+}
+
+.host-div p {
+    max-width: 100%;
+    // margin-top: 0px;
+    max-width: 100%;
+    position: absolute;
+    top: 125px;
+    right: 103px;
+}
+
+.collapse-button2{
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+    padding: 17px;
+    margin-top: 39px;
+}
+
+.collapsible-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.toggle2 {
+
+    width: 100%;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+}
+
+.location-info {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .tags-container {
+        padding-bottom: 50px;
+    }
+
+    .location-info {
+        padding-top:0px;
+       } 
+    
+       .arrow-button-left {
+        top: 291px;
+        svg {
+            width: 40px;
+        }
+       }
+       .arrow-button-right {
+        top: 291px;
+        right: 22px;
+        svg {
+            width: 40px;
+        }
+       }
+    .image-container img {
+       height: 460px;
+    }
+    
+    .location-info {
+    
+    h1 {
+    
+            font-size: 18px;
+            text-align: left;
+            white-space:nowrap;
+            font-weight: 500;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    }
+    
+    .host-container img {
+        width: 10%;
+        position: absolute;
+        top: 685px;
+        right: 23px;
+        max-width: 100%;
+    }
+
+    .host-div p {
+        max-width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 695px;
+        right: 107px;
+    }
+    
+    .collapse-button2{
+        width: 100%;
+        padding: 0px;
+        border-radius: 10px;
+        padding: 17px;
+        margin-top: 39px;
+    }
+    
+    .collapsible-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0px;
+        flex-direction: column;
+    }
+    
+    .toggle2 {
+    
+        width: 100%;
+        border-radius: 10px;
+        background-color: #F6F6F6;
+        margin-left: 0px;
+        padding-left: 0px;
+        font-size: 13px;
+    }
+    
+    .location-info {
+        padding-left: 25px;
+        padding-right: 25px;
     }
   }

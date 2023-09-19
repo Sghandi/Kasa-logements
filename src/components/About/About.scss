@@ -25,31 +25,40 @@ $orange:#FF6060;
     border: none;
     border-radius: 10px;
     padding: 20px;
-    /* margin: 10px; */
     font-size: 24px;
     text-align: left;
     margin-top: 25px;
 
     svg {
-        margin-left: 1048px;
         cursor: pointer;
+        position: sticky;
+        left: 1313px;
+        margin-top: 5px; 
       }
+}
+
+.bla label {
+    width: 55px;
 }
 
 .toggle {
     width: 80%;
     border-radius: 10px;
-    background-color:#F6F6F6; 
-    margin-left:153px;
+    background-color: #F6F6F6;
+    margin-left: 153px;
     text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 
     p {
-        color:$orange;
+        color: $orange;
         margin: 0px;
-        padding:21px;
+        padding: 21px;
         font-size: 20px;
     }
 }
+
 
 .rotate-icon {
     transform: rotate(180deg);
@@ -57,4 +66,29 @@ $orange:#FF6060;
   }
 
  
-  
+  .open {
+    max-height: 1000px;
+  }
+
+//   RESPONSIVE
+@media screen and (max-width: 600px) {
+    .Banner-about {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 125px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .Banner-about {
+        margin-left: 25px;
+        margin-right: 25px;
+        height: 200px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    
+        }
+}

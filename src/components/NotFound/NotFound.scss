@@ -6,6 +6,7 @@ $orange: #FF6060;
     h1 {
         font-size: 288px;
         margin: 0px;
+        font-family: 'montserrat';
     }
 
     a {
@@ -13,4 +14,28 @@ $orange: #FF6060;
         text-decoration: underline;
         color: $orange;
     }
+    h2 {
+        font-weight: 500;
+        padding-bottom: 35px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+.error-message {
+
+h1 {
+    font-size: 96px;
+}
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .error-message {
+
+        h1 {
+            font-size: 173px;
+        }
+        }
 }
