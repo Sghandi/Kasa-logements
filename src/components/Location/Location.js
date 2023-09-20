@@ -11,6 +11,7 @@ function Location() {
   const card = locationData.find((card) => card.id === id);
   const images = card ? card.pictures : [];
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const navigate = useNavigate();
 
   useEffect(() => {
